@@ -1,6 +1,5 @@
 import streamlit as st
 import requests
-import webbrowser
 
 # ─────────────────────────────
 # Set Strava API credentials
@@ -23,8 +22,7 @@ st.title("🚴 Tanner's AI Cycling Coach")
 # Authentication Flow
 if "code" not in st.query_params:
     st.write("To get started, connect your Strava account.")
-    if st.button("🔗 Connect to Strava"):
-        webbrowser.open(auth_url)
+    st.markdown(f"[🔗 Click here to connect your Strava account]({auth_url})", unsafe_allow_html=True)
 
 else:
     code = st.query_params["code"][0]
