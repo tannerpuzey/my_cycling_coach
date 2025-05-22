@@ -5,7 +5,7 @@ import requests
 # Set Strava API credentials
 CLIENT_ID = "160560"
 CLIENT_SECRET = "ef5941bfe890ab58fddb1a1c71c3cfaef178b87c"
-REDIRECT_URI = "http://localhost:8501"
+REDIRECT_URI = "https://mycyclingcoach-ybe9mpilksuvhtvwufvapc.streamlit.app"
 
 # Build auth URL
 auth_url = (
